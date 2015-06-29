@@ -1,0 +1,31 @@
+[user]
+	name = Ian Irving
+	email = ian@falsepositives.com
+[github]
+	user = iirving
+	token = XXX
+[core]
+	excludesfile = /Users/ian/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+  # turn on color
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[push]
+	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
