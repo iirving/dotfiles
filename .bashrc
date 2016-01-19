@@ -60,6 +60,7 @@ export HISTFILESIZE=3000 # the bash history should save 3000 commands
 export HISTCONTROL=ignoredups #don't put duplicate lines in the history.
 alias hist='history | grep $1' #Requires one input
 
+
 # Alias chmod commands
 alias mx='chmod a+x'
 alias 000='chmod 000'
@@ -74,6 +75,9 @@ alias finder='open .'
 # Rails
 alias roadkill="rake db:migrate db:rollback && rake db:migrate"
 
+#stolen from austin ziegler @halostatue
+#run rubocop only against the files that are diff from master but not the schema
+alias gitcop='rubocop $(git diff master --name-only | grep '\.rb' | grep -v schema.rb)'
 
 export CLICOLOR='true'
 export LSCOLORS="gxfxcxdxbxegedabagacad"
