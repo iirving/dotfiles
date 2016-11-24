@@ -26,6 +26,7 @@
 	br = branch
 	ci = commit
 	st = status
+        bd = for-each-ref --sort=-committerdate refs/heads/ --format="%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09"
 [color]
   branch = auto
   diff = auto
