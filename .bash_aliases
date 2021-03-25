@@ -18,6 +18,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+alias rebash=". ~/.bashrc" #restart bash file 
+
 #rails
 # Rails
 alias roadkill="rake db:migrate db:rollback && rake db:migrate"
