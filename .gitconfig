@@ -43,10 +43,10 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[credential]
-	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
 [branch]
 	autosetupmerge = true
 [user]
 	email = ian@falsepositives.com
 	name = iirving
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
